@@ -6,11 +6,11 @@
 
 #### SECTIONS COMPLETE:
 
-- [x] ##### Section 1 - Shopping Cart Wesite - 4min
+- [x] Section 1 - Shopping Cart Wesite - 4min
 
     - [x] Introduction
 
-- [ ] ##### Section 2 - Django 2 and Python 3.6
+- [ ] Section 2 - Django 2 and Python 3.6
 
     - [x] Installation of Python 3.6 and Django 2.0 on windows 10
         - 6min
