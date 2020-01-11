@@ -1,0 +1,58 @@
+{%  extends "base.html" %}
+{%  load staticfiles %}
+{%  block metadescription %}
+    {%  if category %}
+        {{ category.description|truncatewords:155 }}
+    {% else %}
+        Welcome to the cushion store where you can buy comfy and awesome cushions.
+    {%  endif %}
+{%  endblock %}
+{%  block title %}
+    {%  if category %}
+        {{  category.name }} - Perfect Cushion Store
+    {% else %}
+        See Our Cushion Collection - Perfect Cushion Store
+    {%  endif %}
+{%  endblock %}
+
+{% block content %}
+    <!--Breadcrumb navigation-->
+    {%  if category %}
+        <div>
+            <div>
+                <p><a href="{%  url 'shop:allProdCat' %}">Our Product Collection</a> |  {{category.name}}</p>
+            </div>
+        </div>
+    {%  endif %}
+    <div>
+    {%  if category %}
+        <img src="{{category.image.url}}" alt="{{category.name}}">
+    </div>
+    <br>
+    <div>
+        <h1>{{category.name}}</h1>
+        <p>{{category.description}}</p>
+    </div>
+    {%  else %}
+        <img src="{%  static 'img/banner.jpg' %}" alt="Our Products Collection">
+    </div>
+    <br>
+    <div>
+        <h1>Our Products Collection</h1>
+        <p>Finding the perfect cushion for your room can instantly add to the levels of comfort and sense of style throughout your home.</p>
+    </div>
+    {%  endif %}
+    <div>
+        <div>
+            {%  for product in products %}
+                <div>
+                    <div>
+                        <a href=""><img src="{{product.image.url}}" alt=""{{productname}}></a>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+{% endblock %}
