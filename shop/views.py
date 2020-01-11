@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.http import HttpResponse
 from .models import Category, Product
+
 
 def index(request):
     text_var = 'This is my first Django app web page.'

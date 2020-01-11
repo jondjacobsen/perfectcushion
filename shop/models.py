@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Category(models.Model):
     name = models.CharField(max_length=250, unique=True)
@@ -10,6 +11,9 @@ class Category(models.Model):
         ordering = ('name', )
         verbose_name = 'category'
         verbose_name_plural = 'categories'
+
+    def get_url(self):
+        return reverse('shop:products_by_category', args=[self.slug])
 
     def __str__(self):
         return '{}'.format(self.name)
