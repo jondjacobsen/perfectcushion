@@ -1,5 +1,5 @@
-{%  extends "base.html" %}
-{%  load staticfiles %}
+{%  extends "shop/base.html" %}
+{%  load static %}
 {%  block metadescription %}
     {%  if category %}
         {{ category.description|truncatewords:155 }}
@@ -17,7 +17,7 @@
 
 {% block content %}
     <!--Breadcrumb navigation-->
-    {%  if category %}
+    {%  if category %}x
         <div>
             <div>
                 <p><a href="{%  url 'shop:allProdCat' %}">Our Product Collection</a> |  {{category.name}}</p>
@@ -49,10 +49,12 @@
                     <div>
                         <a href=""><img src="{{product.image.url}}" alt=""{{productname}}></a>
                         <div>
-
+                            <h4>{{product.name}}</h4>
+                            <p>${{product.price}}</p>
                         </div>
                     </div>
                 </div>
+            {%  endfor %}
         </div>
     </div>
 {% endblock %}
