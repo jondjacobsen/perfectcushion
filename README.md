@@ -45,5 +45,5 @@
         - 13 min    
         
 ----        
-* ### TOTAL Complete TIME = 2 hour(s) 13 minutes
-* ### Remaining Time = 4 Hours 21 minutes
+* ### TOTAL Complete TIME = 2 hour(s) 23 minutes
+* ### Remaining Time = 4 Hours 11 minutes
