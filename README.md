@@ -24,6 +24,13 @@
         - 27 min
     - [x] The shop app (part 3) - Django Shell
         - 20 min
-    - [ ] The shop app (part 4) - Categories Views and HTML Templaters
+    - [x] The shop app (part 4) - Categories Views and HTML Templaters
         - 31 min
+    - [ ] The shop app (part 5) - Product View and HTML Template
+        - 14 min
+    - [ ] Implementing bootstrap 4 in django
+        - 10 min
+    - [ ] Styling the header, navbar and footer with bootstrap 4
+        - 13 min    
+        
 * ### TOTAL TIME = 1 hour 28 minutes
