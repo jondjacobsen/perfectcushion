@@ -33,4 +33,4 @@
     - [ ] Styling the header, navbar and footer with bootstrap 4
         - 13 min    
         
-* ### TOTAL TIME = 1 hour 28 minutes
+* ### TOTAL TIME = 1 hour 59 minutes
