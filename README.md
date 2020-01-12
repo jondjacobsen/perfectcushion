@@ -24,8 +24,10 @@
         - 27 min
     - [x] The shop app (part 3) - Django Shell
         - 20 min
+        - Detail on writing queries in the shell to enable you to manipulate your data in django without using outside database apps.  Products.objects.all() is a good example.
     - [x] The shop app (part 4) - Categories Views and HTML Templaters
         - 31 min
+        - This when through the setup needed to get the front end website ready for viewing by users.  This included setting up many different functions.
     - [ ] The shop app (part 5) - Product View and HTML Template
         - 14 min
     - [ ] Implementing bootstrap 4 in django
@@ -33,4 +35,6 @@
     - [ ] Styling the header, navbar and footer with bootstrap 4
         - 13 min    
         
-* ### TOTAL TIME = 1 hour 59 minutes
+----        
+* ### TOTAL Complete TIME = 1 hour 59 minutes
+* ### Remaining Time = 4 Hours 35 minutes
