@@ -38,8 +38,9 @@
     - [x] The shop app (part 5) - Product View and HTML Template
         - 14 min
         - ##### Finished 1/12/2020
-    - [ ] Implementing bootstrap 4 in django
+    - [x] Implementing bootstrap 4 in django
         - 10 min
+        - ##### Finished 1/12/2020
     - [ ] Styling the header, navbar and footer with bootstrap 4
         - 13 min    
         
