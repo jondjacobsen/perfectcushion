@@ -10,10 +10,10 @@
           Shop
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="{%  url 'shop:allProdCat' %}">All Products</a>
+          <a class="dropdown-item" href="{{cat.get_url}}">{{cat.name}}</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="https://joeydrewstudios.com/batim">Alice's cushions</a>
         </div>
       </li>
       <li class="nav-item">
@@ -34,11 +34,11 @@
 
 <nav>
     <ul>
-        <li><a href="{%  url 'shop:allProdCat' %}">All Products</a></li>
+        <li><a href="">All Products</a></li>
         {% for cat in links %}
-            <li><a href="{{cat.get_url}}">{{cat.name}}</a></li>
+            <li><a href=""></a></li>
         {%  endfor %}
-        <li><a href="https://joeydrewstudios.com/batim">Alice's Cushions</a></li>
+        <li><a href="">Alice's Cushions</a></li>
         <li>Your Cart()</li>
     </ul>
 </nav><br>
