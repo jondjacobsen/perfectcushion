@@ -11,34 +11,21 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{%  url 'shop:allProdCat' %}">All Products</a>
+            {%  for cat in links %}
           <a class="dropdown-item" href="{{cat.get_url}}">{{cat.name}}</a>
+            {% endfor %}
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://joeydrewstudios.com/batim">Alice's cushions</a>
         </div>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <a class="nav-link" href="#">Your Cart()</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
-
-
-<nav>
-    <ul>
-        <li><a href="">All Products</a></li>
-        {% for cat in links %}
-            <li><a href=""></a></li>
-        {%  endfor %}
-        <li><a href="">Alice's Cushions</a></li>
-        <li>Your Cart()</li>
-    </ul>
-</nav><br>
