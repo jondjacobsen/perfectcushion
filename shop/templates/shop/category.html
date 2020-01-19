@@ -18,28 +18,28 @@
 {% block content %}
     <!--Breadcrumb navigation-->
     {%  if category %}
-        <div>
-            <div>
+        <div class="row my_row_class">
+            <div class="mx-auto">
                 <p><a href="{%  url 'shop:allProdCat' %}">Our Product Collection</a> |  {{category.name}}</p>
             </div>
         </div>
     {%  endif %}
-    <div>
+    <div class="mx-auto">
     {%  if category %}
-        <img src="{{category.image.url}}" alt="{{category.name}}">
+        <img class="my_image" src="{{category.image.url}}" alt="{{category.name}}">
     </div>
     <br>
     <div>
-        <h1>{{category.name}}</h1>
-        <p>{{category.description}}</p>
+        <h1 class="text-center my_title">{{category.name}}</h1>
+        <p class="text-justify">{{category.description}}</p>
     </div>
     {%  else %}
-        <img src="{%  static 'img/banner.jpg' %}" alt="Our Products Collection">
+        <img class="my_image my_image_padding" src="{%  static 'img/banner.jpg' %}" alt="Our Products Collection">
     </div>
     <br>
     <div>
-        <h1><u>Our Products Collection</u></h1>
-        <p>A cushion is a soft bag of some ornamental material, stuffed with wool, hair, feathers, polyester staple fiber, non-woven material, or even paper torn into fragments. It may be used for sitting or kneeling upon, or to soften the hardness or angularity of a chair or couch.[1] Decorative cushions often have a patterned cover material, and are used as decoration for furniture.
+        <h1 class="text-center my_title">Our Products Collection</h1>
+        <p class="text-justify">A cushion is a soft bag of some ornamental material, stuffed with wool, hair, feathers, polyester staple fiber, non-woven material, or even paper torn into fragments. It may be used for sitting or kneeling upon, or to soften the hardness or angularity of a chair or couch.[1] Decorative cushions often have a patterned cover material, and are used as decoration for furniture.
 
 A cushion is also referred to as a bolster, hassock, headrest and a sham.[2]
 
