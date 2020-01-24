@@ -48,6 +48,14 @@ body {
 .my_image_padding {
     padding-top: 5px;
 }
+
+/* Card Formatting */
+
 .my_bottom_margin {
     margin-bottom: 10px;
+}
+.card-body h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
 }
