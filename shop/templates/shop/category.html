@@ -49,13 +49,14 @@ The cushion is a very ancient article of furniture; the inventories of the conte
     <hr>
     </div>
     {%  endif %}
+<!-- Product Container using bootstrap and custom classes in custom.css file -->
     <div class= "container">
         <div class = "row mx-auto">
             {%  for product in products %}
                 <div class="my_bottom_margin col-9 col-sm-12 col-md-4 col-md-12 col-lg-4">
-                    <div class="card" style="min-width: 18rem;">
+                    <div class="card text-center" style="min-width: 18rem;">
                         <a href="{{ product.get_url }}"><img class="card-img-top my_image" src="{{product.image.url}}" alt=""{{productname}}></a>
-                        <div>
+                        <div class="card-body">
                             <h4>{{product.name}}</h4>
                             <p>${{product.price}}</p>
                         </div>
