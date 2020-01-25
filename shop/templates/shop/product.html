@@ -11,26 +11,26 @@
         <div class="mx-auto">
             <p><a href="{% url 'shop:allProdCat' %}">Home</a> | <a href="{{  product.category.get_url }}">{{ product.category }}</a> | {{  product.name }}</p>
         </div>
-        <div>
+        <div class="container">
             <br>
-            <div>
-                <div>
-                    <div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                    <div style="min-width: 18rem">
                         <img src="{{ product.image.url }}" alt="{{ product.name }}"
                     </div>
                 </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div>
-                    <div>
-                        <h1>{{ product.name }}</h1>
-                        <p>${{ product.price }}</p>
-                        <p><h2>Product Description</h2></p>
-                        <p>{{ product.description }}</p>
-                        {%  if product.stock <= 0 %}
-                            <p><b>OUT OF STOCK</b></p>
-                        {%  else %}
-                            <a href="">Add to Cart</a>
-                        {% endif %}
-                    </div>
+                    <h1 class="my_prod_title">{{ product.name }}</h1>
+                    <p>${{ product.price }}</p>
+                    <p>Product Description</p>
+                    <p>{{ product.description }}</p>
+                    {%  if product.stock <= 0 %}
+                        <p><b>OUT OF STOCK</b></p>
+                    {%  else %}
+                        <a href="">Add to Cart</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
