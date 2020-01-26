@@ -22,8 +22,10 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div>
+<!--- PRODUCT TITLE --->
                     <h1 class="my_prod_title">{{ product.name }}</h1>
                     <p>${{ product.price }}</p>
+<!--- PRODUCT DESCRIPTION --->
                     <p class="my_title">Product Description</p>
                     <p class="text-justify my_prod_text">{{ product.description }}</p>
                     {%  if product.stock <= 0 %}

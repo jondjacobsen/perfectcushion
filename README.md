@@ -41,9 +41,33 @@
     - [x] Implementing bootstrap 4 in django
         - 10 min
         - ##### Finished 1/12/2020
-    - [ ] Styling the header, navbar and footer with bootstrap 4
-        - 13 min    
+    - [x] Styling the header, navbar and footer with bootstrap 4
+        - 13 min  
+        - ##### Finished 1/24/2020
+    - [x] Styling category page with bootstrap 4
+        - 16 min
+        - ##### Finished 1/24/2020
+    - [x] Styling product page with bootstrap 4
+        - 10 min 
+        - ##### Finished 1/25/2020
+    - [ ] Implementing Fontawesome 5
+        - 6 min
+        - 
+    - [ ] Paginator
+        - 7 min 
+        -
+    - [ ] Search functionality for the website
+        - 11 min
+        - 
+    - [ ] The cart app - Part 1
+        - 21 min 
+        -
+    
+    
+        
+        
+          
         
 ----        
-* ### TOTAL Complete TIME = 2 hour(s) 23 minutes
-* ### Remaining Time = 4 Hours 11 minutes
+* ### TOTAL Complete TIME = 2 hour(s) 49 minutes
+* ### Remaining Time = 3 Hours 45 minutes
