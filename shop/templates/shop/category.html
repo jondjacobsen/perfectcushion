@@ -68,6 +68,7 @@ The cushion is a very ancient article of furniture; the inventories of the conte
             {%  if products.paginator.num_pages > 1 %}
                 <hr>
                 <div class="text-center">
+<!-- PAGINATOR -- >
                     {% for pg in products.paginator.page_range %}
                         <a href="?page={{pg}}" class="btn btn-light btn-sm {%  if products.number == pg %}active{%  endif %}">{{pg}}</a>
                     {%  endfor %}
