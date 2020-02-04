@@ -50,10 +50,10 @@
     - [x] Styling product page with bootstrap 4
         - 10 min 
         - ##### Finished 1/25/2020
-    - [ ] Implementing Fontawesome 5
+    - [x] Implementing Fontawesome 5
         - 6 min
         - 
-    - [ ] Paginator
+    - [x] Paginator
         - 7 min 
         -
     - [ ] Search functionality for the website
