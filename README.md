@@ -56,7 +56,7 @@
     - [x] Paginator
         - 7 min 
         -
-    - [ ] Search functionality for the website
+    - [x] Search functionality for the website
         - 11 min
         - 
     - [ ] The cart app - Part 1
