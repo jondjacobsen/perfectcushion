@@ -1,4 +1,4 @@
-{%  extends "base.html" %}
+{%  extends "shop/base.html" %}
 {% load static %}
 {% block metadescription %}
     This is the shopping cart page. Proceed to review your items and place the order.
@@ -54,14 +54,14 @@
                                 <br>
                                 Unit Price: ${{ cart_item.product.price }}
                                 <br>
-                                Qty: {{ cart_item.quantity }} * ${{ cart_item.product.price }}
+                                Qty: {{ cart_item.quantity }} x ${{ cart_item.product.price }}
                                 </td>
                                 <td>
                                     ${{ cart_item.sub_total }}
                                 </td>
                                 {% if cart_item < cart_item.product.stock %}
                                     <td>
-                                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a"><i class="fad fa-plus-circle custom_icon"></i></a>&nbsp;<a href="" class="custom_a"><i class="fad fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
+                                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a"><i class="fas fa-plus-circle custom_icon"></i></a>&nbsp;<a href="" class="custom_a"><i class="fas fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
                                     </td>
                                 {% else %}
                                     <td>
@@ -78,9 +78,33 @@
                 </table>
 
             </div>
-            <div>
-
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                <table class="table my_custom_table">
+                    <thead class="my_custom_thead">
+                        <tr>
+                            <th>
+                                Checkout
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Please review your shopping cart before proceeding with the order payment.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                Your total is: <strong>{{ total }}</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mx-auto">
+                    <a href="{% url 'shop:allProdCat' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>
+                </div>
             </div>
         </div>
+        <br>
     {% endif %}
 {% endblock %}

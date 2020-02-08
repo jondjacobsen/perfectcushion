@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Category, Product
+from cart.models import CartItem, Cart
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -20,4 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 
 
-'''jkjkjk'''
+admin.site.register(Cart)
+
+
+admin.site.register(CartItem)
