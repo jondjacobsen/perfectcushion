@@ -1,0 +1,33 @@
+{%  extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+    This is the shopping cart page. Proceed to review your items and place the order.
+{% endblock %}
+{% block title %}
+    Cart - Perfect Cushion Store
+{% endblock %}
+{% block content %}
+    {% if not cart_items %}
+        <div>
+            <div class="text-center">
+                <br>
+                <h1 class="'text-center my_title">
+                    Your Shopping Cart is Emp
+                </h1>
+                <br>
+                <p class = "text-center">
+                    Please click <a href="{% url 'shop:allProdCat' %}">here</a>to continue shopping
+                </p>
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <div class="text-center">
+                <br>
+                <h1 class="text-center my_title">
+                    Your shopping cart
+                </h1>
+                <br>
+            </div>
+        </div>
+{% endblock %}
