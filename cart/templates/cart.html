@@ -59,13 +59,13 @@
                                 <td>
                                     ${{ cart_item.sub_total }}
                                 </td>
-                                {% if cart_item < cart_item.product.stock %}
+                                {% if cart_item.quantity < cart_item.product.stock %}
                                     <td>
-                                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a"><i class="fas fa-plus-circle custom_icon"></i></a>&nbsp;<a href="" class="custom_a"><i class="fas fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
+                                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a"><i class="fas fa-plus-circle custom_icon"></i></a>&nbsp;<a href="" class="custom_icon"><i class="fas fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
                                     </td>
                                 {% else %}
                                     <td>
-                                        &nbsp;<a href="" class="custom_a"><i class="fad fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
+                                        <a href="" class="custom_icon"><i class="fas fa-minus-circle custom_icon"></i></a>&nbsp;<a href=""><i class="fas fa-trash custom_icon"></i></a>
                                     </td>
                                     <td>
 
@@ -95,7 +95,7 @@
                         </tr>
                         <tr>
                             <td class="text-left">
-                                Your total is: <strong>{{ total }}</strong>
+                                Your total is: <strong>${{ total }}</strong>
                             </td>
                         </tr>
                     </tbody>
