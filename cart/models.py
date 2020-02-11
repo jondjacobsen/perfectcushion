@@ -1,5 +1,5 @@
 from django.db import models
-from shop.models import Product
+from shop.models import Product, Category
 
 
 class Cart(models.Model):
