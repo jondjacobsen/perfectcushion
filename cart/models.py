@@ -1,5 +1,6 @@
 from django.db import models
 from shop.models import Product, Category
+from django.urls import reverse
 
 
 class Cart(models.Model):

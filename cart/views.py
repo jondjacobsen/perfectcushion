@@ -68,3 +68,7 @@ def full_remove(request, product_id):
     return redirect('cart:cart_detail')
 
 
+
+
+
+
