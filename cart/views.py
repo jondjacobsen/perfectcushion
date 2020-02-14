@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from shop.models import Product
 from .models import Cart, CartItem
 from django.core.exceptions import ObjectDoesNotExist
+import stripe
+from django.conf import settings
 
 
 def _cart_id(request):
@@ -45,7 +47,13 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
     except ObjectDoesNotExist:
         pass
 
-    return render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter=counter))
+    stripe.api_key = settings.STRIPE_SECRET_KEY
+    stripe_total = int(total * 100)
+    description = 'Perfect Cushion Shop - New Order'
+    data_key = settings.STRIPE_PUBLISHABLE_KEY
+
+
+    return render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter=counter, data_key=data_key, stripe_total=stripe_total, description=description))
 
 
 def cart_remove(request, product_id):
