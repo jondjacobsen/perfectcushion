@@ -126,3 +126,16 @@ body {
     border: 0px !important;
     background-image: none !important;
 }
+
+.stripe-button-el span {
+    display: block;
+    position: relative;
+    padding: 0px 12px;
+    height: 36px !important;
+    line-height: 36px; !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    background-image: none !important;
+    background: none !important;
+}
