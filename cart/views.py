@@ -69,10 +69,8 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
 
 
       except stripe.error.CardError as e:
-          return False, e
-
-
-    return render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter=counter, data_key=data_key, stripe_total=stripe_total, description=description))
+        return False, e
+    return render(request, 'cart.html', dict(cart_items = cart_items, total = total, counter = counter, data_key = data_key, stripe_total = stripe_total, description = description))
 
 
 def cart_remove(request, product_id):
