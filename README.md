@@ -52,17 +52,25 @@
         - ##### Finished 1/25/2020
     - [x] Implementing Fontawesome 5
         - 6 min
-        - 
+        - ##### Finished 2/1/2020
     - [x] Paginator
         - 7 min 
-        -
+        - ##### Finished 2/4/2020
     - [x] Search functionality for the website
         - 11 min
-        - 
-    - [ ] The cart app - Part 1
+        - ##### Finished 2/6/2020
+    - [x] The cart app - Part 1
         - 21 min 
-        -
-    
+        - ##### Finished 2/17/2020
+    - [x] The cart app - Part 2
+        - 13 min 
+        - ##### Finished 2/19/2020
+    - [x] Taking Payments
+        - 13 min 
+        - ##### Finished 2/22/2020
+    - [ ] Creating Orders
+        - 28 min 
+        - ##### Finished 
     
         
         
