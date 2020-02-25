@@ -4,6 +4,7 @@ from .models import Cart, CartItem
 from django.core.exceptions import ObjectDoesNotExist
 import stripe
 from django.conf import settings
+from order.models import Order, OrderItem
 
 
 def _cart_id(request):
@@ -56,6 +57,7 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
       try:
           token = request.POST['stripeToken']
           email = request.POST['stripeEmail']
+          billingName = request.POST['stripeBillingName']
           customer = stripe.Customer.create(
               email=email,
               source=token
