@@ -88,7 +88,12 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
                   billingAddress1=billingAddress1,
                   billingCity=billingCity,
                   billingPostCode=billingPostCode,
-                  billingCountry=billingCountry
+                  billingCountry=billingCountry,
+                  shippingName=shippingNamem,
+                  shippingAddress1=shippingAddress1,
+                  shippingCity=shippingCity,
+                  shippingPostcode=shippingPostcode,
+                  shippingCountry=shippingCountry
                 )
             order_details.save()
             for order_item in cart_items:
