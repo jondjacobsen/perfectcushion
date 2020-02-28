@@ -70,7 +70,7 @@
         - ##### Finished 2/22/2020
     - [ ] Creating Orders
         - 28 min 
-        - ##### Finished 
+        - ##### Finished soon
     
         
         
