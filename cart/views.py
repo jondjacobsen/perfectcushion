@@ -61,8 +61,8 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
           billingName = request.POST['stripeBillingName']
           billingAddress1 = request.POST['stripeBillingAddressLine1']
           billingCity = request.POST['stripeBillingAddressCity']
-          billingPostCode = request.POST['stripeBillingZip']
-          billingCountry = request.POST['stripeBillingCountryCode']
+          billingPostcode = request.POST['stripeBillingAddressZip']
+          billingCountry = request.POST['stripeBillingAddressCountryCode']
           shippingName = request.POST['stripeShippingName']
           shippingAddress1 = request.POST['stripeShippingAddressLine1']
           shippingCity = request.POST['stripeShippingAddressCity']
@@ -87,9 +87,9 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
                   billingName=billingName,
                   billingAddress1=billingAddress1,
                   billingCity=billingCity,
-                  billingPostCode=billingPostCode,
+                  billingPostcode=billingPostcode,
                   billingCountry=billingCountry,
-                  shippingName=shippingNamem,
+                  shippingName=shippingName,
                   shippingAddress1=shippingAddress1,
                   shippingCity=shippingCity,
                   shippingPostcode=shippingPostcode,
