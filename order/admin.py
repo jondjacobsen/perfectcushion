@@ -10,6 +10,7 @@ class OrderItemAdmin(admin.TabularInline):
     ('Price', {'fields': ['price'], }),
     ]
     readonly_fields = ['product', 'quantity', 'price']
+    can_delete = False
 
 
 @admin.register(Order)
