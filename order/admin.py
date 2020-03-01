@@ -11,6 +11,7 @@ class OrderItemAdmin(admin.TabularInline):
     ]
     readonly_fields = ['product', 'quantity', 'price']
     can_delete = False
+    max_num = 0
 
 
 @admin.register(Order)
