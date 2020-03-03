@@ -12,6 +12,7 @@ class OrderItemAdmin(admin.TabularInline):
     readonly_fields = ['product', 'quantity', 'price']
     can_delete = False
     max_num = 0
+    template = 'admin/order/tabular.html'
 
 
 @admin.register(Order)
