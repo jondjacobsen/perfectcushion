@@ -145,5 +145,28 @@ body {
 }
 .my_custom_div {
     margin-bottom: 20px !important;
-
+}
+.my_top_navbar_div {
+    height: 60px;
+    line-height: 50px;
+}
+.my_custom_menu {
+    text-align: right !important;
+}
+.my_custom_menu ul li {
+    list-style: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+    padding-right: 20px;
+    display: inline;
+}
+.my_custom_menu ul li a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
 }

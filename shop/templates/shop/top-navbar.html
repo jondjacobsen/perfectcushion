@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="my_custom_menu"></div>
+        <ul>
+            {% if request.user.is_authenticated and request.user.first_name %}
+                <li>
+                    Welcome, {{ request.user.first_name }}
+                </li>
+            {% endif %}
+        </ul>
+</div>

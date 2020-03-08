@@ -13,6 +13,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="container-fluid bg-light navbar-fixed-top my_top_navbar_div">
+            {% include 'top-navbar.html' %}
+        </div>
         {%  include 'shop/header.html' %}
         {%  include 'shop/navbar.html' %}
         {%  block content %}
