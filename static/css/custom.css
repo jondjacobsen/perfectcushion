@@ -139,8 +139,11 @@ body {
     background-image: none !important;
     background: none !important;
 }
-
 .errorlist li {
     color: red;
     font-weight: bold;
+}
+.my_custom_div {
+    margin-bottom: 20px !important;
+
 }
