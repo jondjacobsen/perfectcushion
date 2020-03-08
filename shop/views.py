@@ -12,6 +12,7 @@ def index(request):
     text_var = 'This is my first Django app web page.'
     return HttpResponse(text_var)
 
+
 # Category view
 
 
@@ -24,7 +25,7 @@ def allProdCat(request, c_slug=None):
     else:
         products_list = Product.objects.all().filter(available=True)
 
-# Pagination code
+    # Pagination code
 
     paginator = Paginator(products_list, 6)
     try:
@@ -35,7 +36,7 @@ def allProdCat(request, c_slug=None):
         products = paginator.page(page)
     except (EmptyPage, InvalidPage):
         products = paginator.page(paginator.num_pages)
-    return render(request, 'shop/category.html', {'category':c_page, 'products': products})
+    return render(request, 'shop/category.html', {'category': c_page, 'products': products})
 
 
 def ProdCatDetail(request, c_slug, product_slug):
@@ -43,7 +44,7 @@ def ProdCatDetail(request, c_slug, product_slug):
         product = Product.objects.get(category__slug=c_slug, slug=product_slug)
     except Exception as e:
         raise e
-    return render(request, 'shop/product.html', {'product':product})
+    return render(request, 'shop/product.html', {'product': product})
 
 
 def signUpView(request):
@@ -57,7 +58,7 @@ def signUpView(request):
             customer_group.user_set.add(signup_user)
     else:
         form = SignUpForm()
-    return render(request, 'accounts/signup.html', {'form':form})
+    return render(request, 'accounts/signup.html', {'form': form})
 
 
 def signinView(request):
@@ -74,4 +75,4 @@ def signinView(request):
                 return redirect('signup')
     else:
         form = AuthenticationForm()
-    return render(request, 'accounts/signin.html', {'form':form})
+    return render(request, 'accounts/signin.html', {'form': form})

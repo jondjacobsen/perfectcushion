@@ -1,5 +1,5 @@
 {%  extends "shop/base.html" %}
-{%  load staic %}
+{% load static %}
 {% load crispy_forms_tags %}
 {%  block metadescription %}
     Sign in and enjoy the variety of cushions
@@ -19,12 +19,12 @@
                 <br>
                 <p>When you create an account with us you can see your order history</p>
                 <br>
-                <a href="{% url 'customer' class="btn btn-secondary" %}"
+                <a href="{% url 'signup' %}" class="btn btn-secondary">Create a New Account</a>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 bg-light">
                 <div>
                     <br>
-                    <h2 class="my_title">Registerd Customers Only</h2>
+                    <h2 class="my_title">Registered Customers Only</h2>
                     <form method="POST">
                         {%  csrf_token %}
                         <p>{{ form | crispy }}</p>
