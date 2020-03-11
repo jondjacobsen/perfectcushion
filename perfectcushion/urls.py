@@ -28,6 +28,7 @@ urlpatterns = [
     path('order/', include('order.urls')),
     path('account/create/', views.signUpView, name='signup'),
     path('account/login/', views.signinView, name='signin'),
+    path('account/logout/', views.signoutView, name='signout')
 ]
 
 if settings.DEBUG:

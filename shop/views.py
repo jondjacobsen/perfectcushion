@@ -5,7 +5,7 @@ from django.core.paginator import Paginator, EmptyPage, InvalidPage
 from django.contrib.auth.models import Group, User
 from .forms import SignUpForm
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 
 
 def index(request):
@@ -76,3 +76,7 @@ def signinView(request):
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/signin.html', {'form': form})
+
+def signoutView(request):
+    logout(request)
+    return redirect('signin')
