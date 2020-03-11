@@ -85,7 +85,7 @@
         - ##### Finished soon
     - [ ] Upload the website project to a production Linux Server
         - 37 min 
-        - ##### Finished $00n    
+        - ##### Finished soon    
         
           
         
