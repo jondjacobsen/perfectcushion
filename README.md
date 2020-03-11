@@ -68,16 +68,27 @@
     - [x] Taking Payments
         - 13 min 
         - ##### Finished 2/22/2020
-    - [ ] Creating Orders
+    - [x] Creating Orders
         - 28 min 
-        - ##### Finished soon
-     - [ ] Creating Orders
+        - ##### Finished 3/1/2020
+    - [x] Thanks Page
+        - 6 min 
+        - ##### Finished 3/4/2020
+    - [x] Sign Up, Sign In, Sign Out
+        - 37 min 
+        - ##### Finished 3/10/2020
+    - [ ] Email Orders
         - 28 min 
+        - ##### Finished s00n
+    - [ ] Customer orders history
+        - 6 min 
         - ##### Finished soon
-        
+    - [ ] Upload the website project to a production Linux Server
+        - 37 min 
+        - ##### Finished $00n    
         
           
         
 ----        
-* ### TOTAL Complete TIME = 4 hour(s) 2 minutes
-* ### Remaining Time = 2 Hours 44 minutes
+* ### TOTAL Complete TIME = 5 hour(s) 13 minutes
+* ### Remaining Time = 1 Hours 21 minutes
