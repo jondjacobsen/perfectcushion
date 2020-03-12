@@ -79,6 +79,7 @@
         - ##### Finished 3/10/2020
     - [ ] Email Orders
         - 28 min 
+        - MailGun methods
         - ##### Finished s00n
     - [ ] Customer orders history
         - 6 min 
