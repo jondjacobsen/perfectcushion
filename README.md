@@ -80,7 +80,7 @@
     - [ ] Email Orders
         - 28 min 
         - MailGun methods
-        - ##### Finished s00n
+        - ##### Finished s00n - Not yet
     - [ ] Customer orders history
         - 6 min 
         - ##### Finished soon
