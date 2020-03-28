@@ -80,6 +80,7 @@
     - [ ] Email Orders
         - 28 min 
         - MailGun methods
+        - Attempting to determine if this section is skipable due to the massive amount of URL setup on MailGun itself.
         - ##### Finished s00n - Not yet
     - [ ] Customer orders history
         - 6 min 
