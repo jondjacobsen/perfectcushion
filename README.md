@@ -91,7 +91,7 @@
         
           
 ---
-###MailGun Setup:
+### MailGun Setup:
 
 Set the value of the DNS server for domain: title-expert.com
 
