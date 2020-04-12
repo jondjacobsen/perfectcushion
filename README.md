@@ -90,7 +90,15 @@
         - ##### Finished soon    
         
           
-        
+---
+###MailGun Setup:
+
+Set the value of the DNS server for domain: title-expert.com
+
+| File Type     |  HostName     | Text                              |
+| ------------- |:-------------:| ----------------------------------:|
+| *.TXT*   | `mg.title-expert.com` | v=spf1 include:mailgun.org ~all |
+
 ----        
 * ### TOTAL Complete TIME = 5 hour(s) 13 minutes
 * ### Remaining Time = 1 Hours 21 minutes
